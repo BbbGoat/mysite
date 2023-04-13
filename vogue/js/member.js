@@ -385,9 +385,16 @@ $(()=>{
                 // -> 이부분이 Promise 처리된 것임!
                 function(res){ // res - 리턴된 결과받는 변수
                     console.log(res);
+                    // 성공시
+                    if (res === "ok") {
+                        alert("회원가입을 축하드립니다! 짝짝짝!!!");
+                        location.replace("login.html");
+                    } //// if ////
+                    else { // 에러 발생시
+                        alert("관리자에게 문의하세요~!"+res);
+                    } //// else ////
                 }
 
-                
             ); ////////// post 메서드 ///////////////
 
 
