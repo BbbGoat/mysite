@@ -30,7 +30,7 @@ session_start();
           // 대상: .sns a:eq(4) span
           $(".sns a").eq(4).find("span").text("로그아웃")
           // 툴팁변경 -> a요소로 다시 올라감
-          .parent().attr("title","로그아웃");
+          .parent().attr("title","로그아웃")
 
           // 3. a요소의 로그아웃 클릭시 로그아웃하기
           .click(function(e){
